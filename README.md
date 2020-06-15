@@ -39,7 +39,7 @@ The first step is to create a Python script that you can use to load the model a
 
 This will create a new Python file in the working directory.
 
-<code>%%writefile load_model.py
+<pre><code>%%writefile load_model.py
 
 import time
 from openvino.inference_engine import IENetwork
@@ -64,4 +64,4 @@ if __name__=='__main__':
     parser.add_argument('--model_path', required=True)
     
     args=parser.parse_args() 
-    main(args)</code>
+    main(args)</code</pre>
