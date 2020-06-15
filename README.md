@@ -33,3 +33,35 @@ We will be using the <pre><code>vehicle-license-plate-detection-barrier-0106</co
 The model has already been downloaded for you in the <pre><code>/data/models/intel</code></pre> directory on Intel's DevCloud. We will be using the following filepath during the job submission in <strong>Step 3:</strong>
 
 <strong>/data/models/intel/vehicle-license-plate-detection-barrier-0106/FP32/vehicle-license-plate-detection-barrier-0106</strong>
+
+# Step 1: Creating a Python Script
+The first step is to create a Python script that you can use to load the model and perform an inference. I have used the <code>%%writefile</code> magic command to create a Python file called <code>load_model.py</code>.
+
+This will create a new Python file in the working directory.
+
+<code>%%writefile load_model.py
+
+import time
+from openvino.inference_engine import IENetwork
+from openvino.inference_engine import IECore
+import argparse
+
+def main(args):
+    model=args.model_path
+    model_weights=model+'.bin'
+    model_structure=model+'.xml'
+    
+    start=time.time()
+    model=IENetwork(model_structure, model_weights)
+
+    core = IECore()
+    net = core.load_network(network=model, device_name='CPU', num_requests=1)
+
+    print(f"Time taken to load model = {time.time()-start} seconds")
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--model_path', required=True)
+    
+    args=parser.parse_args() 
+    main(args)</code>
