@@ -65,3 +65,18 @@ if __name__=='__main__':
     
     args=parser.parse_args() 
     main(args)</code</pre>
+    
+
+# Step 2: Creating a Job Submission Script
+
+To submit a job to the DevCloud, we need to create a shell script. Similar to the Python script above, I have used the <code>%%writefile</code> magic command to create a shell script called load_model_job.sh.
+
+This script does a few things.
+
+Writes stdout and stderr to their respective .log files
+Creates the /output directory
+Creates a MODELPATH variable and assigns the value as the first argument passed to the shell script
+Calls the Python script using the MODELPATH variable value as the command line argument
+Changes to the /output directory
+Compresses the stdout.log and stderr.log files to output.tgz
+Click the Creating a Job Submission Script button below for a demonstration.
