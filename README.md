@@ -64,7 +64,7 @@ if __name__=='__main__':
     parser.add_argument('--model_path', required=True)
     
     args=parser.parse_args() 
-    main(args)</code</pre>
+    main(args)</code></pre>
     
 
 # Step 2: Creating a Job Submission Script
