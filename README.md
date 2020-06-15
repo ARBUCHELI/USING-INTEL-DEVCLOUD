@@ -80,3 +80,18 @@ This script does a few things.
 5. Changes to the <code>/output</code> directory
 6. Compresses the stdout.log and stderr.log files to <code>output.tgz</code>
 
+<pre><code>%%writefile load_model_job.sh
+#!/bin/bash
+
+exec 1>/output/stdout.log 2>/output/stderr.log
+
+mkdir -p /output
+
+MODELPATH=$1
+
+# Run the load model python script
+python3 load_model.py  --model_path ${MODELPATH}
+
+cd /output
+
+tar zcvf output.tgz stdout.log stderr.log</code></pre>
