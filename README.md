@@ -143,7 +143,7 @@ In this step, we'll be using the <code>getResults</code> function to retrieve ou
 <pre><code>import get_results
 
 
-get_results.getResults(job_id_core[0], filename="output.tgz", blocking=True)<code></pre>
+get_results.getResults(job_id_core[0], filename="output.tgz", blocking=True)</code></pre>
 
 # Step 6: View the Outputs
 
