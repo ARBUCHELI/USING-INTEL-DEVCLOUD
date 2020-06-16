@@ -118,7 +118,7 @@ Once the cell is run, this queues up a job on Intel's DevCloud and prints out th
 job_id_core = !qsub load_model_job.sh -d . -l nodes=1:tank-870:i5-6500te -F "/data/models/intel/vehicle-license-plate-detection-barrier-0106/FP32/vehicle-license-plate-detection-barrier-0106"
 print(job_id_core[0])</code></pre>
 
-#Step 4: Running liveQStat
+# Step 4: Running liveQStat
 
 Running the <code>liveQStat</code> function, we can see the live status of our job. Running the this function will lock the cell and poll the job status 10 times. The cell is locked until this finishes polling 10 times or you can interrupt the kernel to stop it by pressing the stop button at the top:stop button
 
