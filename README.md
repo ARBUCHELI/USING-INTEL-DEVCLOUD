@@ -151,7 +151,8 @@ In this step, we unpack the compressed file using <code>!tar zxf</code> and read
 
 <code>stdout.log</code> should contain the printout of the print statement in our Python script. 
 
-
-
+<pre><code>!tar zxf output.tgz
+!cat stdout.log
+!cat stderr.log</pre></code>
 
 
