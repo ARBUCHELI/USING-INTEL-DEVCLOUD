@@ -123,7 +123,7 @@ print(job_id_core[0])</code></pre>
 Running the <code>liveQStat</code> function, we can see the live status of our job. Running the this function will lock the cell and poll the job status 10 times. The cell is locked until this finishes polling 10 times or you can interrupt the kernel to stop it by pressing the stop button at the top:stop button
 
 . <code>Q</code> status means our job is currently awaiting an available node
-. <code>R/code> status means our job is currently running on the requested node
+. <code>R</code> status means our job is currently running on the requested node
     
 <strong>Note:</strong> In the demonstration, it is pointed out that <code>W</code> status means your job is done. This is no longer accurate. Once a job has finished running, it will no longer show in the list when running the <code>liveQStat</code> function.
 
