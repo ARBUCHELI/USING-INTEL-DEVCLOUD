@@ -149,7 +149,7 @@ get_results.getResults(job_id_core[0], filename="output.tgz", blocking=True)<cod
 
 In this step, we unpack the compressed file using <code>!tar zxf</code> and read the contents of the log files by using the <code>!cat</code> command.
 
-<code>stdout.log</code> should contain the printout of the print statement in our Python script.
+<code>stdout.log</code> should contain the printout of the print statement in our Python script. 
 
 
 
