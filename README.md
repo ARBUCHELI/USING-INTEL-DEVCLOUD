@@ -14,8 +14,6 @@ Below are the six steps we'll walk through in this notebook:
 5. Retrieving the output files using the getResults function
 6. View the resulting output
 
-Click the <strong>Introduction to DevCloud</strong> button below for a quick overview of the overall process. We'll then walk through each step of the process.
-
 <strong>IMPORTANT: Set up paths so we can run Dev Cloud utilities</strong>
 
 You must run this every time you enter a Workspace session.
