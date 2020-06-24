@@ -3,8 +3,7 @@
 ## This Content was Created by Intel Edge AI for IoT Developers UDACITY Nanodegree.
 
 This notebook is a demonstration showing you how to request an edge node with an Intel i5 CPU and load a model on the CPU using Udacity's 
-workspace integration with Intel's DevCloud. This notebook is just to give you an overview of the process (you won't be writing any code).
-In the next workspace, you'll be given TODO items to complete.
+workspace integration with Intel's DevCloud.
 
 Below are the six steps we'll walk through in this notebook:
 
