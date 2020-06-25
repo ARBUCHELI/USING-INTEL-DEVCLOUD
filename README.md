@@ -9,9 +9,9 @@ Below are the six steps we'll walk through in this notebook:
 
 1. Creating a Python script to load the model
 2. Creating a job submission script
-3. Submitting a job using the qsub command
-4. Checking the job status using the liveQStat function
-5. Retrieving the output files using the getResults function
+3. Submitting a job using the <code>qsub</code> command
+4. Checking the job status using the <code>liveQStat</code> function
+5. Retrieving the output files using the <code>getResults</code> function
 6. View the resulting output
 
 <strong>IMPORTANT: Set up paths so we can run Dev Cloud utilities</strong>
